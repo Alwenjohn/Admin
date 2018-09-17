@@ -33,6 +33,8 @@
     
     <!-- animate.css stylesheet -->
     <link rel="stylesheet" href="assets/lib/animate.css/animate.css">
+	
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/css/dataTables.bootstrap.min.css">
@@ -224,6 +226,7 @@
             <header>
                 <h5>orders_orderedproduct</h5>
                 <div class="toolbar">
+				<button type="button" class="btn btn-default btn-sm minimize-box"><i class="material-icons" style="font-size: 1.0vw;">add_circle_outline</i> Add New</button> 
                     <div class="btn-group">
                         <a href="#stripedTable" data-toggle="collapse" class="btn btn-default btn-sm minimize-box">
                             <i class="fa fa-angle-up"></i>
@@ -235,7 +238,7 @@
                 </div>
             </header>
             <div id="auth_user" class="body collapse in">
-                <table class="table table-striped responsive-table" style="font-size: 0.9vw;">
+                <table class="table table-striped responsive-table" style="font-size: 0.8vw;">
                     <thead>
                     <tr>
                         <th>id</th>
@@ -249,7 +252,8 @@
 						<th>amount</th>
 						<th>order_date</th>
 						<th>payment</th>
-						<th>customer_id<th>
+						<th>customer_id</th>
+						<th>actions</th>
 						
 						
                     </tr>
@@ -268,6 +272,7 @@
 								<td>2018-19-05</td>
 								<td>unprocessed</td>
 								<td>1</td>
+								<td><a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons" style="font-size: 1.50em;">&#xE254;</i></a><a class="delete" title="Delete" data-toggle="tooltip">      <i class="material-icons" style="font-size: 1.50em;">&#xE872;</i></a></td>
                             </tr>
                     </tbody>                </table>
             </div>
@@ -282,6 +287,7 @@
             <header>
                 <h5>portfolio_category</h5>
                 <div class="toolbar">
+				<button type="button" class="btn btn-default btn-sm minimize-box"><i class="material-icons" style="font-size: 1.0vw;">add_circle_outline</i> Add New</button> 
                     <div class="btn-group">
                         <a href="#stripedTable" data-toggle="collapse" class="btn btn-default btn-sm minimize-box">
                             <i class="fa fa-angle-up"></i>
@@ -298,6 +304,8 @@
                     <tr>
                         <th>id</th>
                         <th>productname</th>
+						<th>actions</th>
+						
 						
                     </tr>
                     </thead>
@@ -305,6 +313,7 @@
                             <tr>
                                 <td>1</td>
                                 <td>tshirt</td>
+								<td><a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons" style="font-size: 1.50em;">&#xE254;</i></a><a class="delete" title="Delete" data-toggle="tooltip">      <i class="material-icons" style="font-size: 1.50em;">&#xE872;</i></a></td>
                             </tr>
                     </tbody>                </table>
             </div>
@@ -321,6 +330,7 @@
             <header>
                 <h5>portfolio_item</h5>
                 <div class="toolbar">
+				<button type="button" class="btn btn-default btn-sm minimize-box"><i class="material-icons" style="font-size: 1.0vw;">add_circle_outline</i> Add New</button> 
                     <div class="btn-group">
                         <a href="#stripedTable" data-toggle="collapse" class="btn btn-default btn-sm minimize-box">
                             <i class="fa fa-angle-up"></i>
@@ -341,6 +351,7 @@
                         <th>image</th>
                         <th>price</th>
 						<th>category_id</th>
+						<th>actions</th>
 						
 						
                     </tr>
@@ -353,6 +364,7 @@
                                 <td>bnw.jpg</td>
                                 <td>250</td>
 								<td>1</td>
+								<td><a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons" style="font-size: 1.50em;">&#xE254;</i></a><a class="delete" title="Delete" data-toggle="tooltip">      <i class="material-icons" style="font-size: 1.50em;">&#xE872;</i></a></td>
                             </tr>
                     </tbody>                </table>
             </div>
@@ -372,6 +384,7 @@
             <header>
                 <h5>auth_user</h5>
                 <div class="toolbar">
+				<button type="button" class="btn btn-default btn-sm minimize-box"><i class="material-icons" style="font-size: 1.0vw;">add_circle_outline</i> Add New</button> 
                     <div class="btn-group">
                         <a href="#stripedTable" data-toggle="collapse" class="btn btn-default btn-sm minimize-box">
                             <i class="fa fa-angle-up"></i>
@@ -383,7 +396,7 @@
                 </div>
             </header>
             <div id="auth_user" class="body collapse in">
-                <table class="table table-striped responsive-table">
+                <table class="table table-striped responsive-table" style="font-size: 1.0vw;">
                     <thead>
                         <tr>
                             <th>id</th>
@@ -397,6 +410,7 @@
 							<th>is_active</th>
 							<th>date_joined</th>
 							<th>lastname</th>
+							<th>actions</th>
 							
                         </tr>
                     </thead>
@@ -413,6 +427,7 @@
 							<td>1</td>
 							<td>2018-09-05</td>
 							<td>leones</td>
+							<td><a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons" style="font-size: 1.50em;">&#xE254;</i></a><a class="delete" title="Delete" data-toggle="tooltip">      <i class="material-icons" style="font-size: 1.50em;">&#xE872;</i></a></td>
                         </tr>
                     </tbody></table>
             </div>
@@ -427,6 +442,7 @@
             <header>
                 <h5>reports_reports</h5>
                 <div class="toolbar">
+				<button type="button" class="btn btn-default btn-sm minimize-box"><i class="material-icons" style="font-size: 1.0vw;">add_circle_outline</i> Add New</button> 
                     <div class="btn-group">
                         <a href="#stripedTable" data-toggle="collapse" class="btn btn-default btn-sm minimize-box">
                             <i class="fa fa-angle-up"></i>
@@ -447,6 +463,7 @@
                         <th>date</th>
                         <th>modeofpayment</th>
 						<th>shipment</th>
+						<th>actions</th>
 						
 						
                     </tr>
@@ -459,6 +476,7 @@
                                 <td>2018-08-27</td>
                                 <td>meetup</td>
 								<td>delivery</td>
+								<td><a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons" style="font-size: 1.50em;">&#xE254;</i></a><a class="delete" title="Delete" data-toggle="tooltip">      <i class="material-icons" style="font-size: 1.50em;">&#xE872;</i></a></td>
                             </tr>
                     </tbody>                </table>
             </div>
