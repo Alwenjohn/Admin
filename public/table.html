@@ -1,0 +1,520 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!--IE Compatibility modes-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Mobile first-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Table</title>
+    
+    <meta name="description" content="Free Admin Template Based On Twitter Bootstrap 3.x">
+    <meta name="author" content="">
+    
+    <meta name="msapplication-TileColor" content="#5bc0de" />
+    <meta name="msapplication-TileImage" content="assets/img/metis-tile.png" />
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/lib/font-awesome/css/font-awesome.css">
+    
+    <!-- Metis core stylesheet -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    
+    <!-- metisMenu stylesheet -->
+    <link rel="stylesheet" href="assets/lib/metismenu/metisMenu.css">
+    
+    <!-- onoffcanvas stylesheet -->
+    <link rel="stylesheet" href="assets/lib/onoffcanvas/onoffcanvas.css">
+    
+    <!-- animate.css stylesheet -->
+    <link rel="stylesheet" href="assets/lib/animate.css/animate.css">
+
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/css/dataTables.bootstrap.min.css">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+    <!--For Development Only. Not required -->
+    <script>
+        less = {
+            env: "development",
+            relativeUrls: false,
+            rootpath: "/assets/"
+        };
+    </script>
+    <link rel="stylesheet" href="assets/css/style-switcher.css">
+    <link rel="stylesheet/less" type="text/css" href="assets/less/theme.less">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.1/less.js"></script>
+
+  </head>
+
+        <body class="  ">
+            <div class="bg-dark dk" id="wrap">
+                <div id="top">
+                    <!-- .navbar -->
+                    <nav class="navbar navbar-inverse navbar-static-top">
+                        <div class="container-fluid">
+                    
+                    
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <header class="navbar-header">
+                    
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a href="index.html" class="navbar-brand" style="padding: 13px;"><img src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/402/1187844402_05cd3669-4818-4c9c-b855-d0bd93bbc7c8.png?cb=1537021252" height="30" width="100"/></a>
+                    
+                            </header>
+                    
+                    
+                    
+                            <div class="topnav">
+                                <div class="btn-group">
+                                    <a data-placement="bottom" data-original-title="E-mail" data-toggle="tooltip"
+                                       class="btn btn-default btn-sm">
+                                        <i class="fa fa-envelope"></i>
+                                        <span class="label label-warning">5</span>
+                                    </a>
+                                    <a data-placement="bottom" data-original-title="Messages" href="#" data-toggle="tooltip"
+                                       class="btn btn-default btn-sm">
+                                        <i class="fa fa-comments"></i>
+                                        <span class="label label-danger">4</span>
+                                    </a>
+                                </div>
+                                <div class="btn-group">
+                                    <a data-placement="bottom" data-original-title="Show / Hide Left" data-toggle="tooltip"
+                                       class="btn btn-primary btn-sm toggle-left" id="menu-toggle">
+                                        <i class="fa fa-bars"></i>
+                                    </a>
+                                </div>
+								<div class="btn-group">
+                                    <a href="login.html" data-toggle="tooltip" data-original-title="Logout" data-placement="bottom"
+                                       class="btn btn-metis-1 btn-sm">
+                                        <i class="fa fa-power-off"></i>
+                                    </a>
+                                </div>
+                    
+                            </div>
+                    
+                    
+                    
+                    
+                            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    
+                                <!-- .nav -->
+                                <ul class="nav navbar-nav">
+                                    <li class="active"><a href="table.html">Tables</a></li>
+									<li><a href="">View Site</a></li>
+                                </ul>
+                                <!-- /.nav -->
+                            </div>
+                        </div>
+                        <!-- /.container-fluid -->
+                    </nav>
+                    <!-- /.navbar -->
+                        <header class="head">
+                                <div class="search-bar">
+                                    <form class="main-search" action="">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Live Search ...">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-primary btn-sm text-muted" type="button">
+                                                    <i class="fa fa-search"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </form>
+                                    <!-- /.main-search -->                                </div>
+                                <!-- /.search-bar -->
+                            <div class="main-bar">
+                                <h3>
+              <i class="fa fa-table"></i>&nbsp;
+            Table
+          </h3>
+                            </div>
+                            <!-- /.main-bar -->
+                        </header>
+                        <!-- /.head -->
+                </div>
+                <!-- /#top -->
+                    <div id="left">
+                        <div class="media user-media bg-dark dker">
+                            <div class="user-media-toggleHover">
+                                <span class="fa fa-user"></span>
+                            </div>
+                            <div class="user-wrapper bg-dark">
+                                <a class="user-link" href="">
+                                    <img class="media-object img-thumbnail user-img" alt="User Picture" src="assets/img/user.gif">
+                                    <span class="label label-danger user-label">16</span>
+                                </a>
+                        
+                                <div class="media-body">
+                                    <h5 class="media-heading">Alwenjohn</h5>
+                                    <ul class="list-unstyled user-info">
+                                        <li><a href="">Administrator</a></li>
+                                        <li>Last Access : <br>
+                                            <small><i class="fa fa-calendar"></i>&nbsp;16 Mar 16:32</small>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- #menu -->
+                       <ul id="menu" class="bg-blue dker" style="height: 330px;">
+                                  <li class="nav-header">Menu</li>
+                                  <li class="nav-divider"></li>
+                                  <li>
+                                    <a href="table.html">
+                                      <i class="fa fa-table"></i>
+                                      <span class="link-title">Tables</span>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="Changepass.html">
+                                      <i class="fa fa-font"></i>
+                                      <span class="link-title">
+										Change Password
+                                  </span></a>
+                                  </li>
+                                  <li>
+                                    <a href="calendar.html">
+                                      <i class="fa fa-calendar"></i>
+                                      <span class="link-title">
+                                    Calendar
+                                  </span>
+                                    </a>
+                                  </li>
+                                  
+                                  <li class="nav-divider"></li>
+								  <br><br>
+
+                                  <li>
+                                    <a href="login.html">
+                                      <i class="fa fa-sign-in"></i>
+                                      <span class="link-title">
+                            Login Page
+                            </span>
+                                    </a>
+                                  </li>
+                                </ul>
+                        <!-- /#menu -->
+                    </div>
+                    <!-- /#left -->
+                <div id="content">
+                    <div class="outer">
+                        <div class="inner bg-light lter">
+                            <!--Begin Datatables-->
+<div class="row">
+    <!-- .col-lg-6 -->
+    <div class="col-lg-12">
+        <div class="box">
+            <header>
+                <h5>orders_orderedproduct</h5>
+                <div class="toolbar">
+                    <div class="btn-group">
+                        <a href="#stripedTable" data-toggle="collapse" class="btn btn-default btn-sm minimize-box">
+                            <i class="fa fa-angle-up"></i>
+                        </a>
+                        <a class="btn btn-danger btn-sm close-box"><i class="fa fa-times"></i></a>
+                    </div>
+
+
+                </div>
+            </header>
+            <div id="auth_user" class="body collapse in">
+                <table class="table table-striped responsive-table" style="font-size: 0.9vw;">
+                    <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>order_fname</th>
+                        <th>order_mname</th>
+                        <th>order_lname</th>
+                        <th>address</th>
+						<th>order_email</th>
+						<th>contact_number</th>
+						<th>status</th>
+						<th>amount</th>
+						<th>order_date</th>
+						<th>payment</th>
+						<th>customer_id<th>
+						
+						
+                    </tr>
+                    </thead>
+                    <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>alwenjohn</td>
+                                <td>wew</td>
+                                <td>leones</td>
+                                <td>311 champaca 2</td>
+								<td>alwenjohn789@gmail</td>
+								<td>09135752351</td>
+								<td>Payment pending</td>
+								<td>200</td>
+								<td>2018-19-05</td>
+								<td>unprocessed</td>
+								<td>1</td>
+                            </tr>
+                    </tbody>                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- .col-lg-6 -->
+    <div class="col-lg-6">
+        <div class="box">
+            <header>
+                <h5>portfolio_category</h5>
+                <div class="toolbar">
+                    <div class="btn-group">
+                        <a href="#stripedTable" data-toggle="collapse" class="btn btn-default btn-sm minimize-box">
+                            <i class="fa fa-angle-up"></i>
+                        </a>
+                        <a class="btn btn-danger btn-sm close-box"><i class="fa fa-times"></i></a>
+                    </div>
+
+
+                </div>
+            </header>
+            <div id="auth_user" class="body collapse in">
+                <table class="table table-striped responsive-table">
+                    <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>productname</th>
+						
+                    </tr>
+                    </thead>
+                    <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>tshirt</td>
+                            </tr>
+                    </tbody>                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.row -->
+<!--End Datatables-->
+
+<div class="row">
+    <!-- .col-lg-6 -->
+    <div class="col-lg-8">
+        <div class="box">
+            <header>
+                <h5>portfolio_item</h5>
+                <div class="toolbar">
+                    <div class="btn-group">
+                        <a href="#stripedTable" data-toggle="collapse" class="btn btn-default btn-sm minimize-box">
+                            <i class="fa fa-angle-up"></i>
+                        </a>
+                        <a class="btn btn-danger btn-sm close-box"><i class="fa fa-times"></i></a>
+                    </div>
+
+
+                </div>
+            </header>
+            <div id="auth_user" class="body collapse in">
+                <table class="table table-striped responsive-table">
+                    <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>brandname</th>
+                        <th>description</th>
+                        <th>image</th>
+                        <th>price</th>
+						<th>category_id</th>
+						
+						
+                    </tr>
+                    </thead>
+                    <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>baleno</td>
+                                <td>hulk</td>
+                                <td>bnw.jpg</td>
+                                <td>250</td>
+								<td>1</td>
+                            </tr>
+                    </tbody>                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.row -->
+<!--End Datatables-->
+
+
+
+
+<div class="row">
+    <!-- .col-lg-6 -->
+    <div class="col-lg-12">
+        <div class="box">
+            <header>
+                <h5>auth_user</h5>
+                <div class="toolbar">
+                    <div class="btn-group">
+                        <a href="#stripedTable" data-toggle="collapse" class="btn btn-default btn-sm minimize-box">
+                            <i class="fa fa-angle-up"></i>
+                        </a>
+                        <a class="btn btn-danger btn-sm close-box"><i class="fa fa-times"></i></a>
+                    </div>
+
+
+                </div>
+            </header>
+            <div id="auth_user" class="body collapse in">
+                <table class="table table-striped responsive-table">
+                    <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>password</th>
+                            <th>last_login</th>
+                            <th>is_superuser</th>
+							<th>username</th>
+							<th>first_name</th>
+							<th>email</th>
+							<th>is_staff</th>
+							<th>is_active</th>
+							<th>date_joined</th>
+							<th>lastname</th>
+							
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>andrianne</td>
+                            <td>2018-09-05</td>
+                            <td>1</td>
+							<td>admin</td>
+							<td>alwenjohn</td>
+							<td>alwenjohn789@gmail.com</td>
+							<td>1</td>
+							<td>1</td>
+							<td>2018-09-05</td>
+							<td>leones</td>
+                        </tr>
+                    </tbody></table>
+            </div>
+        </div>
+    </div>
+    <!-- /.col-lg-6 -->
+</div>
+<div class="row">
+    <!-- .col-lg-6 -->
+    <div class="col-lg-8">
+        <div class="box">
+            <header>
+                <h5>reports_reports</h5>
+                <div class="toolbar">
+                    <div class="btn-group">
+                        <a href="#stripedTable" data-toggle="collapse" class="btn btn-default btn-sm minimize-box">
+                            <i class="fa fa-angle-up"></i>
+                        </a>
+                        <a class="btn btn-danger btn-sm close-box"><i class="fa fa-times"></i></a>
+                    </div>
+
+
+                </div>
+            </header>
+            <div id="auth_user" class="body collapse in">
+                <table class="table table-striped responsive-table">
+                    <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>quantity</th>
+                        <th>design</th>
+                        <th>date</th>
+                        <th>modeofpayment</th>
+						<th>shipment</th>
+						
+						
+                    </tr>
+                    </thead>
+                    <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>design_2.jpg</td>
+                                <td>2018-08-27</td>
+                                <td>meetup</td>
+								<td>delivery</td>
+                            </tr>
+                    </tbody>                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.row -->
+<!--End Datatables-->
+
+
+    <!-- /.col-lg-6 -->
+</div>
+
+                        </div>
+                        <!-- /.inner -->
+                    </div>
+                    <!-- /.outer -->
+                </div>
+                <!-- /#content -->
+
+            </div>
+            <!-- /#wrap -->
+            <footer class="Footer bg-dark dker">
+                <p>2018 &copy; PapaPrint's Administration</p>
+            </footer>
+            <!-- /#footer -->
+            <!--jQuery -->
+            <script src="assets/lib/jquery/jquery.js"></script>
+
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/js/jquery.dataTables.min.js"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.12/js/dataTables.bootstrap.min.js"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.26.6/js/jquery.tablesorter.min.js"></script>
+                    <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+
+            <!--Bootstrap -->
+            <script src="assets/lib/bootstrap/js/bootstrap.js"></script>
+            <!-- MetisMenu -->
+            <script src="assets/lib/metismenu/metisMenu.js"></script>
+            <!-- onoffcanvas -->
+            <script src="assets/lib/onoffcanvas/onoffcanvas.js"></script>
+            <!-- Screenfull -->
+            <script src="assets/lib/screenfull/screenfull.js"></script>
+
+
+            <!-- Metis core scripts -->
+            <script src="assets/js/core.js"></script>
+            <!-- Metis demo scripts -->
+            <script src="assets/js/app.js"></script>
+
+                <script>
+                    $(function() {
+                      Metis.MetisTable();
+                      Metis.metisSortable();
+                    });
+                </script>
+        </body>
+
+</html>
